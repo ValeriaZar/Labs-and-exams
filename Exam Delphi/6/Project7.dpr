@@ -1,0 +1,87 @@
+Program Project7;
+
+{$APPTYPE CONSOLE}
+{$R *.res}
+
+Type
+    TTypeEvent = (TeExit, TeEnter);
+
+    TEvent = Record
+        Time: Integer;
+        Event: TTypeEvent;
+    End;
+
+    TArr = Array Of TEvent;
+
+Procedure SortEvents(Var Arr: TArr);
+Var
+    I, J, N: Integer;
+    Temp: TEvent;
+    NeedSwap: Boolean;
+Begin
+    N := Length(Arr);
+    For I := 0 To N - 2 Do
+    Begin
+        For J := 0 To N - I - 2 Do
+        Begin
+            NeedSwap := False;
+            If Arr[J].Time > Arr[J + 1].Time Then
+                NeedSwap := True
+            Else If (Arr[J].Time = Arr[J + 1].Time) Then
+                If (Arr[J].Event = TeExit) and (Arr[J + 1].Event = TeEnter) Then
+                    NeedSwap := True;
+            If NeedSwap Then
+            Begin
+                Temp := Arr[J + 1];
+                Arr[J + 1] := Arr[J];
+                Arr[J] := Temp;
+            End;
+        End;
+    End;
+End;
+
+Function FindMax(Const Arr: TArr): Integer;
+Var
+    I, MaxPeople, CurrentPeople: Integer;
+Begin
+    MaxPeople := 0;
+    CurrentPeople := 0;
+    For I := 0 To High(Arr) Do
+    Begin
+        If Arr[I].Event = TeEnter Then
+            Inc(CurrentPeople)
+        Else
+            Dec(CurrentPeople);
+        If CurrentPeople > MaxPeople Then
+            MaxPeople := CurrentPeople;
+    End;
+    FindMax := MaxPeople;
+End;
+
+Var
+    I, N, Max: Integer;
+    F: TextFile;
+    Arr: TArr;
+    EventStr: String;
+
+Begin
+    AssignFile(F, 'try.txt');
+    Reset(F);
+    Readln(F, N);
+    Setlength(Arr, N);
+    For I := 0 To High(Arr) Do
+    Begin
+        Readln(F, Arr[I].Time);
+        Readln(F, EventStr);
+        If EventStr = 'enter' Then
+            Arr[I].Event := TeEnter
+        Else
+            Arr[I].Event := TeExit;
+    End;
+    CloseFile(F);
+    SortEvents(Arr);
+    Max := FindMax(Arr);
+    Writeln('Max: ', Max);
+    Readln;
+
+End.

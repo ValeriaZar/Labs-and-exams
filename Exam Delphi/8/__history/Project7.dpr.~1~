@@ -1,0 +1,52 @@
+Program Project7;
+
+{$APPTYPE CONSOLE}
+{$R *.res}
+
+Type
+    TGood = Record
+        Name: String[40];
+        Day: Integer;
+        Srok: Integer;
+        Weight: Double;
+        Price: Double;
+    End;
+
+    TArr = Array Of TGood;
+
+Function FindGoods(Arr: TGood; CurrentDay, K: Integer): Boolean;
+Var
+    I: Integer;
+    TotalCost: Double;
+Begin
+    Result := False;
+    TotalCost := Arr.Weight * Arr.Price;
+    If (Arr.Day + Arr.Srok < CurrentDay) And (TotalCost > K) Then
+        Result := True;
+End;
+
+Var
+    I, N, K, CurrentDay: Integer;
+    Arr: TArr;
+    F: TextFile;
+Begin
+    AssignFile(F, 'try.txt');
+    Reset(F);
+    Readln(F, N, K, CurrentDay);
+    SetLength(Arr, N);
+    For I := 0 To High(Arr) Do
+    Begin
+        Readln(F, Arr[I].Name);
+        Readln(F, Arr[I].Day);
+        Readln(F, Arr[I].Srok);
+        Readln(F, Arr[I].Weight);
+        Readln(F, Arr[I].Price);
+    End;
+    CloseFile(F);
+    For I := 0 To High(Arr) Do
+    Begin
+        If FindGoods(Arr[I], CurrentDay, K) Then
+            Writeln('Name: ', Arr[I].Name, ' Price For kg: ', Arr[I].Price, ' Total Price: ', (Arr[I].Price*Arr[I].Weight):0:2);
+    End;
+    Readln;
+End.

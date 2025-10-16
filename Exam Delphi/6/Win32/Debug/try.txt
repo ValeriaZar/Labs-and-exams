@@ -1,0 +1,13 @@
+6
+10
+enter
+12
+enter
+15
+exit
+16
+enter
+18
+exit
+20
+exit

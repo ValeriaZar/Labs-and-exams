@@ -1,0 +1,81 @@
+20
+John Smith
+9
+7
+8.0
+Alice Johnson
+8
+10
+9.0
+Robert Brown
+7
+5
+6.2
+Emily Davis
+10
+9
+9.5
+Michael Johnson
+6
+8
+7.0
+Sarah Wilson
+9
+6
+7.5
+David Martinez
+10
+10
+10.0
+Linda Thompson
+7
+6
+6.5
+James Garcia
+8
+7
+7.5
+Barbara White
+9
+5
+7.0
+Christopher Hall
+6
+9
+7.5
+Elizabeth Clark
+8
+6
+6.7
+Daniel Lewis
+7
+8
+7.2
+Susan Walker
+10
+7
+8.5
+Thomas Young
+9
+9
+9.0
+Patricia Allen
+7
+5
+6.0
+Steven Hernandez
+10
+6
+8.0
+Karen King
+8
+10
+9.2
+Brian Wright
+9
+8
+8.4
+Nancy Scott
+6
+6
+6.0

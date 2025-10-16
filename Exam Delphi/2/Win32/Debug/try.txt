@@ -1,0 +1,26 @@
+5
+Leo Tolstoy
+War and Peace
+10
+50
+500
+Fyodor Dostoevsky
+Crime and Punishment
+5
+100
+450
+Alexander Pushkin
+Eugene Onegin
+20
+30
+520
+Mikhail Bulgakov
+The Master and Margarita
+15
+80
+470
+Anton Chekhov
+The Cherry Orchard
+8
+40
+510

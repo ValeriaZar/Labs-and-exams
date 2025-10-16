@@ -1,0 +1,21 @@
+5
+Ivanov Ivan Ivanovich
+Development
+2018
+120000
+Petrov Petr Petrovich
+Testing
+2019
+90000
+Sidorov Sidor Sidorovich
+Development
+2020
+110000
+Kuznetsova Anna Mikhailovna
+Analytics
+2021
+95000
+Vasiliev Vasily Vasilievich
+Development
+2017
+130000
