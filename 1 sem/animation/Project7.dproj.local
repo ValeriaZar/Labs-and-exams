@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/03/23 16:30:55.000.203,=C:\Mac\Home\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/23 16:31:26.000.815,C:\Mac\Home\Documents\Embarcadero\Studio\Projects\Unit1.pas=Y:\Desktop\Forms\Forms\lab 6.1\BoatUnit.pas</Transaction>
+    <Transaction>2025/03/23 16:31:26.000.815,C:\Mac\Home\Documents\Embarcadero\Studio\Projects\Unit1.dfm=Y:\Desktop\Forms\Forms\lab 6.1\BoatUnit.dfm</Transaction>
+    <Transaction>2025/03/23 19:12:44.000.062,C:\Mac\Home\Documents\Embarcadero\Studio\Projects\Project7.dproj=Y:\Desktop\Forms\Forms\lab 6.1\Project7.dproj</Transaction>
+    <Transaction>2025/03/24 15:32:35.000.069,=C:\Mac\Home\Desktop\Forms\Forms\lab 6.1\Unit1.pas</Transaction>
+    <Transaction>2025/03/24 15:34:31.000.574,C:\Mac\Home\Desktop\Forms\Forms\lab 6.1\Unit1.pas=C:\Mac\Home\Desktop\Forms\Forms\lab 6.1\InstAndDevUnit.pas</Transaction>
+    <Transaction>2025/03/24 15:34:31.000.574,C:\Mac\Home\Desktop\Forms\Forms\lab 6.1\Unit1.dfm=C:\Mac\Home\Desktop\Forms\Forms\lab 6.1\InstAndDevUnit.dfm</Transaction>
+    <Transaction>2025/03/24 15:36:39.000.746,C:\Mac\Home\Desktop\Forms\Forms\lab 6.1\InstAndDevUnit.dfm=</Transaction>
+    <Transaction>2025/03/24 15:36:48.000.159,=C:\Mac\Home\Desktop\Forms\Forms\lab 6.1\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

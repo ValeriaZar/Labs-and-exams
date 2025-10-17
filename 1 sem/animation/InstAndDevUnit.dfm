@@ -1,0 +1,31 @@
+object InstAndDevForm: TInstAndDevForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'InstAndDev'
+  ClientHeight = 480
+  ClientWidth = 672
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poScreenCenter
+  TextHeight = 15
+  object InstAndDevLabel: TLabel
+    Left = 264
+    Top = 144
+    Width = 160
+    Height = 28
+    Caption = 'InstAndDevLabel'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+end

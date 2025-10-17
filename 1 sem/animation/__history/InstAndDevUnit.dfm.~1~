@@ -1,0 +1,24 @@
+unit InstAndDevUnit;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TInstAndDevForm = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  InstAndDevForm: TInstAndDevForm;
+
+implementation
+
+{$R *.dfm}
+
+end.

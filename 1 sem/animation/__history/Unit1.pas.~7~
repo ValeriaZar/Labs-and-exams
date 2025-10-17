@@ -1,0 +1,48 @@
+Unit Unit1;
+
+Interface
+
+Uses
+    Winapi.Windows,
+    Winapi.Messages,
+    System.SysUtils,
+    System.Variants,
+    System.Classes,
+    Vcl.Graphics,
+    Vcl.Controls,
+    Vcl.Forms,
+    Vcl.Dialogs,
+    Vcl.StdCtrls;
+
+Type
+    TInstAndDev = Class(TForm)
+        InstAndDevLabel: TLabel;
+        Function FormOnHelp(Command: Word; Data: THelpEventData; Var CallHelp: Boolean): Boolean;
+        Procedure SetText(const AText: String);
+    Private
+        { Private declarations }
+    Public
+        { Public declarations }
+    End;
+
+Var
+    InstAndDev: TInstAndDev;
+
+Implementation
+
+{$R *.dfm}
+
+Function TInstAndDev.FormOnHelp(Command: Word; Data: THelpEventData; Var CallHelp: Boolean): Boolean;
+Begin
+    CallHelp := False;
+    FormOnHelp := True;
+End;
+
+Procedure TInstAndDev.SetText(const AText: String);
+Begin
+    InstAndDevLabel.Caption := AText;
+    InstAndDevLabel.Left := (Self.ClientWidth - InstAndDevLabel.Width) div 2;
+    InstAndDevLabel.Top := (Self.ClientHeight - InstAndDevLabel.Height) div 2;
+End;
+
+End.
